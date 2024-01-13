@@ -1,5 +1,9 @@
 --Завдання 1
---Відображення усіх овочів з калорійністю, менше вказаної.
+--Відображення усіх фруктів з калорійністю у вказаному
+--діапазоні.
 
 SELECT * FROM VegetablesAndFruits 
-WHERE type = 'овоч' AND calories < 30;
+WHERE type = 'фрукт' AND calories BETWEEN 10 AND 90;
+
+
+
