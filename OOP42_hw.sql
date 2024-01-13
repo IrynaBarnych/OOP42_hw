@@ -1,9 +1,8 @@
---Завдання 1
---Показати усі овочі та фрукти жовтого або червоного
---кольору.
+--Завдання 2
+--Показати кількість овочів.
 
-SELECT * FROM VegetablesAndFruits 
-WHERE color IN ('жовтий', 'червоний') AND type IN ('овоч', 'фрукт');
+SELECT COUNT(*) AS vegetable_count FROM VegetablesAndFruits 
+WHERE type = 'овоч';
 
 
 
