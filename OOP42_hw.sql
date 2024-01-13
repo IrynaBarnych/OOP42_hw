@@ -1,7 +1,7 @@
 --Завдання 2
---Показати мінімальну калорійність овочів та фруктів.
+--Показати максимальну калорійність овочів та фруктів.
 
-SELECT type, MIN(calories) AS min_calories
+SELECT type, MAX(calories) AS max_calories
 FROM VegetablesAndFruits
 GROUP BY type;
 
