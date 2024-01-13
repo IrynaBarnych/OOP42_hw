@@ -1,8 +1,8 @@
 --Завдання 2
---Показати кількість овочів.
+--Показати кількість фруктів.
 
 SELECT COUNT(*) AS vegetable_count FROM VegetablesAndFruits 
-WHERE type = 'овоч';
+WHERE type = 'фрукт';
 
 
 
