@@ -1,9 +1,14 @@
 --Завдання 2
---Показати середню калорійність овочів та фруктів.
+--Показати фрукт з мінімальною калорійністю.
 
-SELECT type, AVG(calories) AS avg_calories
+SELECT *
 FROM VegetablesAndFruits
-GROUP BY type;
+WHERE type = 'фрукт' AND calories = (
+    SELECT MIN(calories)
+    FROM VegetablesAndFruits
+    WHERE type = 'фрукт'
+);
+
 
 
 
