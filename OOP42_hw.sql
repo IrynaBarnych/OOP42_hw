@@ -1,10 +1,10 @@
 --Завдання 2
---Показати фрукт з мінімальною калорійністю.
+--Показати фрукт з максимальною калорійністю.
 
 SELECT *
 FROM VegetablesAndFruits
 WHERE type = 'фрукт' AND calories = (
-    SELECT MIN(calories)
+    SELECT MAX(calories)
     FROM VegetablesAndFruits
     WHERE type = 'фрукт'
 );
