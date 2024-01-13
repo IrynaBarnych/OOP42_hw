@@ -1,9 +1,10 @@
 --Завдання 2
---Показати максимальну калорійність овочів та фруктів.
+--Показати середню калорійність овочів та фруктів.
 
-SELECT type, MAX(calories) AS max_calories
+SELECT type, AVG(calories) AS avg_calories
 FROM VegetablesAndFruits
 GROUP BY type;
+
 
 
 
