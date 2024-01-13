@@ -1,7 +1,7 @@
 --Завдання 2
---Показати колір мінімальної кількості овочів та фруктів
+--Показати колір максимальної кількості овочів та фруктів.
 
-SELECT color, MIN(item_count) AS min_count
+SELECT color, MAX(item_count) AS max_count
 FROM (
     SELECT color, type, COUNT(*) AS item_count
     FROM VegetablesAndFruits
